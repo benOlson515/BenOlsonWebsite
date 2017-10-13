@@ -36,7 +36,7 @@ img:hover{
     margin-top: 13%;
     /*background-color: rgba(255,255,255,.4);*/
     background-image: url(../Images/card_background2.jpg);
-    
+    box-shadow: 10px 10px 10px;
 }
 
 #card-profile{
