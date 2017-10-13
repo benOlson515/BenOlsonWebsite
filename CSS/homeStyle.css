@@ -52,7 +52,7 @@ img:hover{
     margin-top: 5px;
 }
 #card-profile ul{
-    margin-left: -40px;
+    
 }
 
 #name{
@@ -100,6 +100,6 @@ img:hover{
 #links ul{
     margin-top: 145px;
     background-color:forestgreen;
-    box-shadow: -5px 5px 5px;
+    box-shadow: -5px 5px;
 }
 
