@@ -51,13 +51,15 @@ img:hover{
 #card-profile li{
     display: inline-block;
     margin-top: 5px;
+    float: center;
 }
 #card-profile ul{
     
 }
 
 #prof-wrap{
-    width: 250px;
+    width: 300px;
+    float: left;
 }
 
 #name{
