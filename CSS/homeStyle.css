@@ -31,6 +31,7 @@ img:hover{
 
 #card{
     width: 50%;
+    
     height: 400px;
     margin-left: 25%;
     margin-top: 13%;
@@ -49,10 +50,14 @@ img:hover{
 
 #card-profile li{
     display: inline-block;
-    margin-top: px;
+    margin-top: 5px;
 }
 #card-profile ul{
     
+}
+
+#prof-wrap{
+    width: 250px;
 }
 
 #name{
