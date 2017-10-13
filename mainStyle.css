@@ -1,0 +1,28 @@
+html{
+    background-image: url("Images/Backpacking Photos/Lake_Superior_View.jpg");
+    background-size: cover;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+nav ul{
+    
+}
+
+nav{
+    
+    
+}
+#nav{
+    text-align: center;
+    margin-top: 8%;
+    height: 10%;
+    width: 100%;
+    
+    
+}

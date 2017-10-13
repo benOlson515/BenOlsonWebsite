@@ -1,0 +1,99 @@
+html{
+    background-image:url("../Images/Backpacking Photos/Lake_Superior_View.jpg");
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+li{
+    list-style-type: none;
+    font-family:Arial;
+}
+
+a{
+    color: rgba(55,55,55,.8);
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    padding: 3px;
+    border-radius: 5px;
+}
+a:visited{
+    color: rgba(55,55,55,1);
+    text-decoration: none;
+    
+}
+img:hover{
+    opacity: .5;
+}
+
+
+#card{
+    width: 50%;
+    height: 400px;
+    margin-left: 25%;
+    margin-top: 13%;
+    /*background-color: rgba(255,255,255,.4);*/
+    background-image: url(../Images/card_background2.jpg);
+    
+}
+
+#card-profile{
+    height: 400px;
+    width: 50%;
+    float: left;
+    align-content: center;
+    text-align: center;
+}
+
+#card-profile li{
+    display: inline-block;
+    margin-top: 5px;
+}
+#card-profile ul{
+    
+}
+
+#name{
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 18px;
+}
+
+#pic{
+    width:250px;
+}
+
+#profilePic{
+    width: 250px;
+    height: 240px;  
+    overflow: hidden;
+    border-radius: 50%;
+    
+}
+
+.info{
+    width:100%;
+    font-family: Segoe UI;
+    font-weight: 500;
+    color:darkslategrey
+}
+
+#links{
+    height: 400px;
+    width: 50%;
+    float: left;
+}
+
+#links Li {
+    
+    display: block;
+    color: rgba(55,55,55,8);
+    font-size: 50px;
+    font-family: Segoe UI;
+    font-weight: 900;
+    margin-top: 35px;
+    padding: 10px;
+}
+
