@@ -1,5 +1,69 @@
 html{
-    background-image:url("../Images/Backpacking Photos/Lake_Superior_View.jpg");
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    transition: 0.2 ease;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style-type: none;
+    color: white;
+    
+}
+ul li {
+    display: inline;
+}
+
+#name{
+    width: 100hw;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    color: white;
+    font-family: Courier New;
+    margin-top: 17%;
+    background-color: rgba(70,70,70,1);
+    padding: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: white; 
+}
+
+
+#links{
+    float: left;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+#links li{
+    color: white;
+    font-family: Courier New;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 40px;
+    padding: 9px;
+    text-align: center;
+    white-space: nowrap;
+    
+}
+
+
+
+/*html{
+    background-color: rgba(220,223,229,1);
+   
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -8,6 +72,10 @@ html{
 li{
     list-style-type: none;
     font-family:Arial;
+}
+
+#fullPage{
+    
 }
 
 a{
@@ -28,16 +96,21 @@ img:hover{
     opacity: .5;
 }
 
+body{
+    
+}
 
 #card{
     width: 50%;
     max-width: 850;
+    min-width: 730px;
     height: 400px;
     margin-left: 25%;
     margin-top: 13%;
-    /*background-color: rgba(255,255,255,.4);*/
-    background-image: url(../Images/card_background2.jpg);
+    background-color: rgba(255,255,255,.8);
+    /*background-image: url(../Images/card_background2.jpg);
     box-shadow: 10px 10px 10px;
+    
 }
 
 #card-profile{
@@ -108,5 +181,5 @@ img:hover{
     margin-top: 145px;
     background-color:forestgreen;
     box-shadow: -5px 5px;
-}
+}*/
 

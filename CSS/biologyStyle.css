@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    min-width: 775px;
+}
+
+.sidebar{
+    width: 20%;
+    height: 100%;
+    margin: 0px;
+    float: left;
+    background-color: forestgreen;
+    
+}
+
+.content{
+    width: 80%;
+    height: 100%;
+    margin: 0px;
+    float: left;
+    background-color: gray;
+    
+}
+
+.sidebar ul {
+    float: left;
+    list-style: none;
+    padding-left: 0;
+    font-size: 20pt;
+}
+.biolist {
+    float:left;
+    padding: 20px;
+    width: 100%;
+}
+
+.biolist:hover{
+    
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    
+}

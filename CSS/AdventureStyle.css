@@ -1,0 +1,16 @@
+.grid{
+    width: 100%;
+}
+
+.grid-item, .grid-sizer{
+    width: 20%;
+    
+}
+.grid-item--width2{
+    width: 40%;
+    
+}
+.grid-item{
+    float: left;
+}
+
