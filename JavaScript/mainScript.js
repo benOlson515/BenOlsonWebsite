@@ -6,7 +6,7 @@ var name = document.getElementById('wrap');
 
 //events for developer link
 dev.onmouseover = function(){
-    page.style.backgroundImage = "url('../Images/deskGrayscale.jpg')";
+    page.style.background = "url('../Images/deskGrayscale.jpg')";
     page.style.backgroundSize = "cover";
     dev.style.background = "rgba(70,70,70,1)";
 }
@@ -17,7 +17,7 @@ dev.onmouseout = function(){
 
 //events for biologist link
 bio.onmouseover = function(){
-    page.style.backgroundImage = "url('../Images/bgTable.jpg')";
+    page.style.background = "url('../Images/bgTable.jpg')";
     page.style.backgroundSize = "cover";
     bio.style.background = "rgba(70,70,70,1)";
     
@@ -29,7 +29,7 @@ bio.onmouseout = function(){
 
 //events for adventure link
 adven.onmouseover = function(){
-    page.style.backgroundImage = "url('../Images/ellysPeakGS.jpg')";
+    page.style.background = "url('../Images/ellysPeakGS.jpg')";
     page.style.backgroundSize = "cover";
     adven.style.background = "rgba(70,70,70,1)";
 }
