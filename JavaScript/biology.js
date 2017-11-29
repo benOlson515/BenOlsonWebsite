@@ -13,15 +13,15 @@ waterquality.style.cursor = "pointer";
 document.getElementById('body').onload = function(){
     document.getElementById('content').src='../HTML/biologistHome.html';
     resetColors();
-    biohome.style.backgroundColor = "#6f6f70";
+    biohome.style.backgroundColor = "gray";
     biohomeCurrent = true;
 }
 
 //reset background colors of list items
 function resetColors(){
-    bluegill.style.backgroundColor = "#088c0f";
-    biohome.style.backgroundColor = "#088c0f";
-    waterquality.style.backgroundColor = "#088c0f";
+    bluegill.style.backgroundColor = "rgba(70,70,70,1)";
+    biohome.style.backgroundColor = "rgba(70,70,70,1)";
+    waterquality.style.backgroundColor = "rgba(70,70,70,1)";
     
     biohomeCurrent = false;
     bluegillcurrent = false;
@@ -32,7 +32,7 @@ function resetColors(){
 biohome.addEventListener("click", function(){
     document.getElementById('content').src='../HTML/biologistHome.html';
     resetColors();
-    biohome.style.backgroundColor = "#6f6f70";
+    biohome.style.backgroundColor = "gray";
     biohomeCurrent = true;
     
     
@@ -41,7 +41,7 @@ biohome.addEventListener("click", function(){
 
 biohome.onmouseout = function(){
     if(biohomeCurrent !== true){
-        biohome.style.backgroundColor = "#088c0f";
+        biohome.style.backgroundColor = "rgba(70,70,70,1)";
     }
    
 };
@@ -51,7 +51,7 @@ biohome.onmouseout = function(){
 bluegill.addEventListener("click", function(){
     document.getElementById('content').src='../HTML/blueGillResearch.html';
     resetColors();
-    bluegill.style.backgroundColor = "#6f6f70";
+    bluegill.style.backgroundColor = "gray";
     bluegillcurrent = true;
     
     
@@ -59,7 +59,7 @@ bluegill.addEventListener("click", function(){
 
 bluegill.onmouseout = function(){
     if(bluegillcurrent !== true){
-        bluegill.style.backgroundColor = "#088c0f";
+        bluegill.style.backgroundColor = "rgba(70,70,70,1)";
     }
 
 };
@@ -68,7 +68,7 @@ bluegill.onmouseout = function(){
 waterquality.addEventListener("click", function(){
     document.getElementById('content').src='../HTML/waterQualityResearch.html';
     resetColors();
-    waterquality.style.backgroundColor = "#6f6f70";
+    waterquality.style.backgroundColor = "gray";
     waterqualityCurrent = true;
     
     
@@ -76,7 +76,7 @@ waterquality.addEventListener("click", function(){
 
 waterquality.onmouseout = function(){
     if(waterqualityCurrent !== true){
-        waterquality.style.backgroundColor = "#088c0f";
+        waterquality.style.backgroundColor = "rgba(70,70,70,1)";
     }
 
 };

@@ -2,26 +2,46 @@
     margin: 0;
 }
 
+html{
+    height: 100%;
+}
+
 body{
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     min-width: 775px;
+    float: left;
+    margin:0%;
+    position: fixed;
+    
+}
+
+#mainHead{
+    height: 8%;
+    width: 100%;
+    float: left;
+    position: relative;
+    
+    background-color: rgba(30,30,30,1);
+    text-align: center;
 }
 
 .sidebar{
     width: 20%;
-    height: 100%;
-    margin: 0px;
+    height: 92%;
+    margin: 0%;
     float: left;
-    background-color: forestgreen;
+    background-color: rgba(70,70,70,1);
     
 }
 
 .content{
     width: 80%;
-    height: 100%;
+    height: 92%;
     margin: 0px;
     float: left;
-    background-color: rgba(70,70,70,1);
+    
+    background-color: white;
     
 }
 
@@ -31,9 +51,9 @@ body{
     padding-left: 0;
     font-size: 20pt;
 }
-.biolist {
+.sidebar li {
     float:left;
-    padding: 20px;
+    padding: 18px;
     width: 100%;
 }
 
@@ -43,14 +63,49 @@ body{
 
 a{
     text-decoration: none;
-    color:white;
+    color:black;
 }
 
-a:visited {
-    text-decoration: none;
+
+
+a:hover {
     color: white;
 }
 
-a:hover {
+h2{
+    padding: 1%;
+    align-content: center;
+    color: white;
+    font-size: 35px;
     
 }
+h3{
+    padding: 10px;
+}
+
+#homeBtn{
+    position: absolute;
+    bottom: 0;
+    width: 10%;
+    background-color: #722820;
+    float: left;
+    text-align: center;
+}
+
+#contactBtn{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 10%;
+    background-color: #8e380c;
+    float: left;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
