@@ -1,0 +1,30 @@
+
+.modal{
+    display: none;
+    width: 80%;
+    position: fixed;
+    z-index: 1;
+    left: 10%;
+    bottom: 0;
+    background-color: lightgray;
+    height: 40%;
+    
+    
+}
+
+.mdlContent{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#close{
+    position: absolute;
+    padding: 10px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    
+}
+

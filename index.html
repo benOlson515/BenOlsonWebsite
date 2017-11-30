@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <title>Ben's Personal Web Page</title>
         <link type="text/css" rel="stylesheet" href="CSS/homeStyle.css" >
+        <link type="text/css" rel="stylesheet" href="CSS/contactModalStyle.css" >
     </head>
     
     <body>
@@ -27,11 +28,22 @@
             </div>            
         </div>
         
+        <!--this button opens a modal with contact information-->
         <div id="contactButton">Contact Ben</div>
+        
+        <!-- the html for the modal itself -->
+        <div id="contactMdl" class="modal">
+            <div class="mdlContent">
+                <img src="Images/cross.png" id="close">
+                <p>Contact information here</p>
+            
+            </div>
+        </div>
         
     </body>
     
     <script type="text/javascript" src="JavaScript/mainScript.js"></script>
+    <script type="text/javascript" src="JavaScript/contactModalScript.js"></script>
     
 </html>
 

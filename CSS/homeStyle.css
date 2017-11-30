@@ -59,6 +59,7 @@ a{
     
 }
 
+/*modal button css */
 #contactButton{
     position: absolute;
     bottom: 0;
@@ -69,6 +70,7 @@ a{
     background-color: #8e380c;
     font-weight: bold;
     font-size: 14pt;
+    cursor: pointer;
 }
 
 
