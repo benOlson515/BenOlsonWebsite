@@ -16,6 +16,7 @@ closeMdl.onclick = function() {
     contactMdl.style.display = "none";
 }
 
-document.onclick = function(event) {
+/*document.onclick = function(event) {
     alert(event.target.getAttribute('id'));
 }
+*/

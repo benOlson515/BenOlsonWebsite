@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Adventures</title>
-        <link type="text/css" rel="stylesheet" href="../CSS/AdventureStyle.css">
-        <script src="../JavaScript/AdventureScript.js"></script>
-        <script src="../JavaScript/isotope.js"></script>
+        <meta charset="UTF-8">
+        <title>Ben as a Biologist</title>
+        <link type="text/css" rel="stylesheet" href="../CSS/AdventureStyle.css" >
+        <link type="text/css" rel="stylesheet" href="../CSS/contactModalStyle.css" >
     </head>
-    <div class="grid">
-        <img class="grid-sizer" src="../Images/BackpackingPhotos/camp_1.jpg">
-        
-        
-        <img class="grid-item" src="../Images/BackpackingPhotos/kili_wood.jpg">
-        <img class="grid-item" src="../Images/BackpackingPhotos/camp_4.jpg">
-        <img class="grid-item" src="../Images/BackpackingPhotos/kili_camp.jpg">
-        <img class="grid-item" src="../Images/BackpackingPhotos/stream_2.jpg">
-        <img class="grid-item grid-item--width2" src="../Images/BackpackingPhotos/camp_6.jpg">
-        <img class="grid-item grid-item--width2" src="../Images/BackpackingPhotos/lake_3.jpg">
-        <img class="grid-item" src="../Images/BackpackingPhotos/kili_trail.jpg">
-        
-        <img class="grid-item" src="../Images/BackpackingPhotos/kili_2.jpg">
-        
-        <img class="grid-item" src="../Images/BackpackingPhotos/laike_4.jpg">
-        
-        <img class="grid-item" src="../Images/BackpackingPhotos/lake_1.jpg">
-        <img class="grid-item" src="../Images/BackpackingPhotos/kili_river.jpg">
     
     
     
-    </div>
-
+    <body id="body">
+        
+        <header id="mainHead">
+            <h2>Ben as an Adventurer</h2>
+        </header>
+        
+        
+        <div class="sidebar">
+        
+            <p>This page would mainly be a showcase for my photography, using the lightbox jquery plugin to view photos laid out in a grid in the iframe to the right.</p>
+            
+            
+            
+            
+            
+        </div>
+        <div id="homeBtn"><h3><a href="../index.html">Return to Home</a></h3></div>
+            <div id="contactButton"><h3>Contact Ben</h3></div>
+        
+        
+        <div class="content">
+        
+            <iframe id="content" width="100%" height="100%">
+            
+            </iframe>
+            
+        </div>
+        
+        
+        
+        <!-- the html for the modal itself -->
+        <div id="contactMdl" class="modal">
+            <div class="mdlContent">
+                <img src="../Images/cross.png" id="close">
+                <p>Contact information here</p>
+            
+            </div>
+        </div>
+        
+    </body>
+     <script type="text/javascript" src="../JavaScript/AdventureScript.js"></script>
+     <script type="text/javascript" src="../JavaScript/contactModalScript.js"></script>
 </html>

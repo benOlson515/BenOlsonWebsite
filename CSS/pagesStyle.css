@@ -10,7 +10,7 @@ body{
     height: 100%;
     width: 100%;
     min-width: 775px;
-    
+    float: left;
     margin:0%;
     position: fixed;
     
@@ -19,33 +19,47 @@ body{
 #mainHead{
     height: 8%;
     width: 100%;
-    float: none;
+    float: left;
     position: relative;
     
     background-color: rgba(30,30,30,1);
-    text-align: left;
+    text-align: center;
 }
 
 .sidebar{
-    width: 21%;
+    width: 20%;
     height: 92%;
     margin: 0%;
     float: left;
     background-color: rgba(70,70,70,1);
-    padding: 2%;
     
 }
 
 .content{
     width: 80%;
-    height: 100%;
+    height: 92%;
     margin: 0px;
     float: left;
-    margin-top: 0;
+    
     background-color: white;
     
 }
 
+.sidebar ul {
+    float: left;
+    list-style: none;
+    padding-left: 0;
+    font-size: 20pt;
+}
+.sidebar li {
+    float:left;
+    padding: 18px;
+    width: 100%;
+}
+
+.biolist:hover{
+    
+}
 
 a{
     text-decoration: none;
@@ -72,7 +86,7 @@ h3{
 #homeBtn{
     position: absolute;
     bottom: 0;
-    width: 12.5%;
+    width: 10%;
     background-color: #722820;
     float: left;
     text-align: center;
@@ -81,10 +95,18 @@ h3{
 #contactButton{
     position: absolute;
     bottom: 0;
-    left: 12.5%;
-    width: 12.5%;
+    left: 10%;
+    width: 10%;
     background-color: #8e380c;
     float: left;
     text-align: center;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
