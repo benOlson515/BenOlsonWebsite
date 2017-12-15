@@ -5,6 +5,7 @@
         <title>Ben as a Deceloper</title>
         <link type="text/css" rel="stylesheet" href="../CSS/pagesStyle.css" >
         <link type="text/css" rel="stylesheet" href="../CSS/contactModalStyle.css" >
+        <link type="text/css" rel="stylesheet" href="../CSS/resumeModalStyle.css">
     </head>
     
     
@@ -13,6 +14,7 @@
         
         <header id="mainHead">
             <h2>Ben as a Developer</h2>
+            <div id="resIcon"><img id="resIconImg" src="../Images/resumeIcon.png"></div>
         </header>
         
         
@@ -42,17 +44,37 @@
         </div>
         
         <!-- the html for the modal itself -->
-        <div id="contactMdl" class="modal">
-            <div class="mdlContent">
-                <img src="../Images/cross.png" id="close">
-                <p>Contact information here</p>
-            
+        <div id="conDim">
+            <div id="contactMdl" class="modal">
+                <div class="mdlContent">
+
+                    <img src="../Images/cross.png" id="close">
+                    <div id="links">
+                        <p id="title">Contact Information</p>
+                        <a href="https://www.linkedin.com/in/ben-olson-042808149" target="_blank"><img id="icon" src="../Images/icons/linkedIn.png" style="margin-left:0;"></a>
+
+    <!--                    <img id="icon" src="../Images/icons/indeed.png">-->
+                        <a href="mailto:benolson515@gmail.com"><img id="icon" src="../Images/icons/email.png"></a>
+
+                        <p id="phone">Phone: 218-825-9186</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- html for resume modal-->
+        <div id="dimmedBG">
+            <div id="resumeModal" class="resumeModal">
+                <img src="../Images/cross.png" id="closeRes">
+                <iframe id="resFrame" src="../Docs/Benjamin_Olson_2017.pdf"></iframe>
             </div>
         </div>
         
     </body>
     
-     <script type="text/javascript" src="../JavaScript/develop.js"></script>
+    <script type="text/javascript" src="../JavaScript/develop.js"></script>
     <script type="text/javascript" src="../JavaScript/contactModalScript.js"></script>
+    <script type="text/javascript" src="../JavaScript/resumeModalScript.js"></script>
     
 </html>

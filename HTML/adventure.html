@@ -5,6 +5,7 @@
         <title>Ben as a Biologist</title>
         <link type="text/css" rel="stylesheet" href="../CSS/AdventureStyle.css" >
         <link type="text/css" rel="stylesheet" href="../CSS/contactModalStyle.css" >
+        <link type="text/css" rel="stylesheet" href="../CSS/resumeModalStyle.css">
     </head>
     
     
@@ -13,43 +14,69 @@
         
         <header id="mainHead">
             <h2>Ben as an Adventurer</h2>
+            <div id="resIcon"><img id="resIconImg" src="../Images/resumeIcon.png"></div>
         </header>
         
         
         <div class="sidebar">
         
-            <p>This page would mainly be a showcase for my photography, using the lightbox jquery plugin to view photos laid out in a grid in the iframe to the right.</p>
-            <p>This div would be used to hold a bio/description related to my time spent exploring</p>
+            <p>This page would mainly be a showcase for my photography</p>
+            <p>This div would be used to hold a bio/description related to my time spent exploring.</p>
             
             
             
             
             
-        </div>
+        
         <div id="homeBtn"><h3><a href="../index.html">Return to Home</a></h3></div>
-            <div id="contactButton"><h3>Contact Ben</h3></div>
+        <div id="contactButton"><h3>Contact Ben</h3></div>
+        </div>
         
+        <div class="content" src="adventurePhotos.html">
         
-        <div class="content">
-        
-            <iframe id="content" width="100%" height="100%">
+            <iframe width="100%" height="100%" src="adventurePhotos.html">
             
             </iframe>
+                
+            
+            
             
         </div>
+        
         
         
         
         <!-- the html for the modal itself -->
-        <div id="contactMdl" class="modal">
-            <div class="mdlContent">
-                <img src="../Images/cross.png" id="close">
-                <p>Contact information here</p>
-            
+        <div id="conDim">
+            <div id="contactMdl" class="modal">
+                <div class="mdlContent">
+
+                    <img src="../Images/cross.png" id="close">
+                    <div id="links">
+                        <p id="title">Contact Information</p>
+                        <a href="https://www.linkedin.com/in/ben-olson-042808149" target="_blank"><img id="icon" src="../Images/icons/linkedIn.png" style="margin-left:0;"></a>
+
+    <!--                    <img id="icon" src="../Images/icons/indeed.png">-->
+                        <a href="mailto:benolson515@gmail.com"><img id="icon" src="../Images/icons/email.png"></a>
+
+                        <p id="phone">Phone: 218-825-9186</p>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- html for resume modal-->
+        <div id="dimmedBG">
+            <div id="resumeModal" class="resumeModal">
+                <img src="../Images/cross.png" id="closeRes">
+                <iframe id="resFrame" src="../Docs/Benjamin_Olson_2017.pdf"></iframe>
             </div>
         </div>
         
     </body>
-     <script type="text/javascript" src="../JavaScript/AdventureScript.js"></script>
-     <script type="text/javascript" src="../JavaScript/contactModalScript.js"></script>
+    
+    <script type="text/javascript" src="../JavaScript/AdventureScript.js"></script>
+    <script type="text/javascript" src="../JavaScript/contactModalScript.js"></script>
+    <script type="text/javascript" src="../JavaScript/resumeModalScript.js"></script>
 </html>

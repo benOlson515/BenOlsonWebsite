@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+}
+#resIcon{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 3%;
+    height: 70%;
+    padding: 10px;
+}
+
+#resIcon img{
+    max-width: 100%;
+    opacity: .4;
+}
+
+.resumeModal{
+    display: block;
+    position: fixed;
+    width:70%;
+    left:15%;
+    height: 90%;
+    top: 4%;
+    animation-name: animateRes;
+    animation-duration: 1s; 
+}
+
+#resFrame{
+    width: 98%;
+    height: 96%;
+    margin-top: 4%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.4);
+    
+}
+#closeRes{
+    position: absolute;
+    padding: 5px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(240,143,122,.5);
+    opacity: .5; 
+}
+#dimmedBG{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height:100%;
+    background-color: rgba(50,50,50,.8);
+}
+
+@keyframes animateRes {
+    from {opacity:0}
+    to {opacity:1}
+}

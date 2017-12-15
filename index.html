@@ -5,11 +5,11 @@
         <meta charset="UTF-8">
         <title>Ben's Personal Web Page</title>
         <link type="text/css" rel="stylesheet" href="CSS/homeStyle.css" >
-        <link type="text/css" rel="stylesheet" href="CSS/contactModalStyle.css" >
+        
     </head>
     
     <body>
-        
+        <div id="resIcon"><img id="resIconImg" src="Images/resumeIcon.png"></div>
         <div>
                 
             <h2 id="name">Benjamin J. Olson</h2>
@@ -31,65 +31,38 @@
         <div id="contactButton">Contact Ben</div>
         
         <!-- the html for the modal itself -->
-        <div id="contactMdl" class="modal">
-            <div class="mdlContent">
-                <img src="Images/cross.png" id="close">
-                <p>Contact information here</p>
-            
+        
+            <div id="contactMdl" class="modal">
+                <div class="mdlContent">
+
+                    <img src="Images/cross.png" id="close">
+                    <div id="links">
+                        <p id="title">Contact Information</p>
+                        <a href="https://www.linkedin.com/in/ben-olson-042808149" target="_blank"><img id="icon" src="Images/icons/linkedIn.png" style="margin-left:0;"></a>
+                        <a href="mailto:benolson515@gmail.com"><img id="icon" src="Images/icons/email.png"></a>
+
+                        <p id="phone">Phone: 218-825-9186</p>
+
+                    </div>
+
+                </div>
             </div>
-        </div>
+        
+        
+        <!-- html for resume modal-->
+        
+            <div id="resumeModal" class="resumeModal">
+                <img src="../Images/cross.png" id="closeRes">
+                <iframe id="resFrame" src="../Docs/Benjamin_Olson_2017.pdf"></iframe>
+            </div>
+        
         
     </body>
     
     <script type="text/javascript" src="JavaScript/mainScript.js"></script>
-    <script type="text/javascript" src="JavaScript/contactModalScript.js"></script>
+    <script type="text/javascript" src="JavaScript/homeResumeModalScript.js"></script>
     
 </html>
 
 
 
-<!--<!DOCTYPE html>
-<html id="fullPage">
-    <head>
-        <meta charset="UTF-8">
-        <title>Ben's Personal Web Page</title>
-        <link type="text/css" rel="stylesheet" href="CSS/homeStyle.css" >
-    </head>
-    <body id="card" >
-        
-        <div >
-            
-            <div id="card-profile">
-               <div id="prof-wrap">
-                <ul>
-                    <li id="profilePic"><a href="HTML/profile.html"><img title="View Ben's Resume" id="pic" src="Images/profilePic.jpg"></a></li>
-                    <li id="name">Benjamin J Olson</li>
-                    <li class="info">benOlson515@gmail.com</li>
-                    <li class="info">218-825-9186</li>
-                    <li class="info"> <a href="https://www.linkedin.com/in/ben-olson-042808149/" target="_blank">Linked In</a></li>
-                        
-                </ul>
-                </div>   
-            
-            </div>
-            
-            <div id = "links">
-                <nav>
-                    <ul>
-                        
-                        <li id="adventure"><a href="HTML/adventure.html" title="About Ben as an Adventurer" >Adventurer</a></li>
-                        <li id="biology"><a href="HTML/biology.html" title="About Ben as a Biologist">Biologist</a></li>
-                        <li id="developer"><a href="HTML/develope.html" title="About Ben as a Developer">Developer</a></li>
-                        
-
-                    </ul>
-                </nav>
-            </div>
-                    
-                    
-                    
-        </div>
-        
-    </body>
-    <script type="text/javascript" src="JavaScript/mainScript.js"></script>
-</html>-->

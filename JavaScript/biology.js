@@ -6,6 +6,8 @@ var biohomeCurrent = false;
 var bluegillcurrent = false;
 var waterqualityCurrent = false;
 
+
+
 biohome.style.cursor = "pointer";
 bluegill.style.cursor = "pointer";
 waterquality.style.cursor = "pointer";
@@ -80,6 +82,8 @@ waterquality.onmouseout = function(){
     }
 
 };
+
+
 
 
 

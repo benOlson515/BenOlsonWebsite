@@ -73,6 +73,126 @@ a{
     cursor: pointer;
 }
 
+/*resume modal css*/
+#resIcon{
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+@keyframes animateRes {
+    from {opacity:0}
+    to {opacity:1}
+}
+
+#resIcon img{
+    max-width: 100%;
+    opacity: .4;
+}
+
+#resumeModal{
+    display: none;
+    position: fixed;
+    width:70%;
+    left:15%;
+    height: 90%;
+    top: 4%;
+    animation-name: animateRes;
+    animation-duration: 1s; 
+}
+
+iframe{
+    width: 98%;
+    height: 96%;
+    margin-top: 4%;
+    
+}
+#closeRes{
+    position: absolute;
+    padding: 5px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(240,143,122,.5);
+    opacity: .5; 
+}
+
+/*css for contact modal*/
+.modal{
+    display: none;
+    width: 40%;
+    position: fixed;
+    z-index: 1;
+    left: 30%;
+    bottom: 30%;
+    border: black;
+    background-image: url("../Images/busCard.jpg");
+    background-size: contain;
+    border-radius: 7px;
+    border-width: 1px;
+    height: 42%;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.8);
+    animation-name: animatetop;
+    animation-duration: .6s;    
+}
+
+
+
+.mdlContent{
+    text-align: center;
+    height: 100%;
+    width: 100;
+    
+}
+
+#close{
+    position: absolute;
+    padding: 10px;
+    height: 20px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#links{
+    margin-top:0;
+    width: 100%;
+    height: 100%;
+}
+
+#icon{
+    height: 50%;
+    margin-left: 10%;
+    border-radius: 20px;
+}
+
+#phone{
+    font-family: courier;
+    font-weight: bold;
+    margin-top: 4%;
+}
+
+#title{
+    margin-top: 5%;
+    font-family: courier;
+    font-weight: bolder;
+    font-size: 26px;
+}
+
+@keyframes animatetop {
+    from {bottom: -40%; opacity:0}
+    to {bottom: 30%; opacity:1}
+}
+
+
+#contactButtton:hover{
+    background-color: azure;
+}
 
 
 /*html{

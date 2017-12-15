@@ -3,6 +3,7 @@ var adven = document.getElementById('adventure');
 var dev = document.getElementById('developer');
 var page = document.getElementById('fullPage');
 var name = document.getElementById('wrap');
+var btnContact = document.getElementById('contactButton');
 
 //events for developer link
 dev.onmouseover = function(){
@@ -46,6 +47,16 @@ function resetBG(){
     bio.style.background = "rgba(0,0,0,0)";
 };
 
+
+//contact button hover
+btnContact.onmouseover = function() {
+    btnContact.style.color = "white";
+}
+btnContact.onmouseout = function() {
+    btnContact.style.color = "black";
+}
+
+
 //close if clicked anywhere outside of modal
 window.onclick = function(event) {
     
@@ -55,6 +66,31 @@ window.onclick = function(event) {
     
     
 }
+
+//scripts to display modal with contact information
+var openMdl = document.getElementById('contactButton');
+var closeMdl = document.getElementById('close');
+//var contactMdl = document.getElementById('conDim');
+
+//open it on button click
+openMdl.addEventListener("click", function() {
+    contactMdl.style.display = "block";
+})
+
+//close if cross is clicked
+closeMdl.onclick = function() {
+    contactMdl.style.display = "none";
+}
+
+closeMdl.onmouseover = function () {
+    closeMdl.style.backgroundColor = "firebrick";
+}
+
+closeMdl.onmouseout = function () {
+    closeMdl.style.backgroundColor = "";
+}
+
+
 
 
 
