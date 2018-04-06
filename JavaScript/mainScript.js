@@ -5,6 +5,9 @@ var page = document.getElementById('fullPage');
 var name = document.getElementById('wrap');
 var btnContact = document.getElementById('contactButton');
 
+
+
+
 //events for developer link
 dev.onmouseover = function(){
     page.style.backgroundImage = "url('Images/deskGrayscale.jpg')";
@@ -68,6 +71,7 @@ window.onclick = function(event) {
 }
 
 //scripts to display modal with contact information
+
 var openMdl = document.getElementById('contactButton');
 var closeMdl = document.getElementById('close');
 //var contactMdl = document.getElementById('conDim');
@@ -89,6 +93,9 @@ closeMdl.onmouseover = function () {
 closeMdl.onmouseout = function () {
     closeMdl.style.backgroundColor = "";
 }
+
+
+
 
 
 
