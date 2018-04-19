@@ -70,11 +70,7 @@ a{
    
 }
 
-@media only screen and (max-width: 400px){
-    #listDiv{
-        font-size: 40px;
-    }
-}
+
 
 /*   **********resume modal css********** */
 
