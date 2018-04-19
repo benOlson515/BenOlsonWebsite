@@ -17,16 +17,18 @@ body{
 }
 
 li{
+    display: inline-block;
     list-style-type: none;
-    color: white;  
-    margin-top: 10px; 
+    color: white; 
+    margin-top: 10px;
     padding: 5px;
+    width: 100%;
 }
 
 #listDiv{
     
     position: fixed;
-    width: 130px;
+    width: 150px;
     text-align: center;
     align-content: center;
     left:50%;
@@ -110,6 +112,10 @@ iframe{
     background-color: rgba(240,143,122,.5);
     opacity: .5; 
    
+}
+
+#resumeSmallScreen{
+    display: none;
 }
 
 
@@ -249,6 +255,20 @@ iframe{
     background-color: rgba(240,143,122,.5);
     opacity: .5; 
    
+}
+
+/* ********media query for small screens and mobile********* */
+@media screen and (max-width: 760px){
+    #resumeSmallScreen{
+        display: block;
+    }
+    #resume{
+        display:none;
+    }
+    li{
+        background-color: rgba(70,70,70,1);
+    }
+    
 }
 
 

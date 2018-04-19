@@ -40,12 +40,14 @@ proj.onmouseout = function(){
 // *******script for resume modal***************
 resume.addEventListener("click", function() {
     resumeModal.style.display = "block";
+    document.getElementById("resFrame").src="Docs/Resume2018.pdf#zoom=75";
 })
 
 var closeResume = document.getElementById("closeRes");
 
 closeResume.addEventListener("click", function() {
     resumeModal.style.display = "none";
+    document.getElementById("resFrame").src="";
 })
 
 closeResume.addEventListener("mouseover", function(){
