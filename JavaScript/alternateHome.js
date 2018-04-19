@@ -2,6 +2,8 @@
 var about = document.getElementById('about');
 var contact = document.getElementById('contact');
 var resume = document.getElementById('resume');
+var proj = document.getElementById('projects');
+
 
 
 //change backgrounds of li elements on hover
@@ -27,38 +29,60 @@ resume.onmouseout = function(){
     resume.style.background = "rgba(0,0,0,0)";
 }
 
+proj.onmouseover = function(){
+    proj.style.background = "rgba(70,70,70,1)";
+}
+proj.onmouseout = function(){
+    proj.style.background = "rgba(0,0,0,0)";
+}
 
 
-
-//open contact modal
-contact.addEventListener("click", function() {
-    contactMdl.style.display = "block";
-    /*window.alert("bio clicked");*/
-})
-
-//open resume modal
+// *******script for resume modal***************
 resume.addEventListener("click", function() {
     resumeModal.style.display = "block";
 })
 
+var closeResume = document.getElementById("closeRes");
+
+closeResume.addEventListener("click", function() {
+    resumeModal.style.display = "none";
+})
+
+closeResume.addEventListener("mouseover", function(){
+    closeResume.style.backgroundColor = "firebrick";
+})
+
+closeResume.addEventListener("mouseout", function(){
+    closeResume.style.backgroundColor = "";
+})
 
 
-//script to close contact modal
-var closeMdl = document.getElementById('close');
-closeMdl.onclick = function() {
-    contactMdl.style.display = "none";
+
+
+// *******script for contact modal**************
+
+contact.addEventListener("click", function() {
+    contactModal.style.display = "block";
+})
+
+var closeContact = document.getElementById('closeContact');
+
+closeContact.onclick = function() {
+    contactModal.style.display = "none";
 }
 
-closeMdl.onmouseover = function () {
-    closeMdl.style.backgroundColor = "firebrick";
-}
+closeContact.addEventListener("mouseover", function(){
+    closeContact.style.backgroundColor = "firebrick";
+})
 
-closeMdl.onmouseout = function () {
-    closeMdl.style.backgroundColor = "";
-}
+closeContact.addEventListener("mouseout", function(){
+    closeContact.style.backgroundColor = "";
+})
 
 
-// **script for about me modal
+
+// ************script for about me modal**********
+
 var aboutMdl = document.getElementById('aboutModal');
 var closeAbout = document.getElementById('closeAbout');
 

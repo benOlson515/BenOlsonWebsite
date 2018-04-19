@@ -13,16 +13,16 @@ image.onmouseout = function () {
 };
 
 //*****script for modal*****
-var modal = document.getElementById("resumeModal");
+var resumeModal = document.getElementById("resumeModal");
 var close = document.getElementById("closeRes");
 
 //display modal when image is clicked
 image.addEventListener("click", function () {
-    modal.style.display = "block";
+    resumeModal.style.display = "block";
 })
 
 close.onclick = function(){
-    modal.style.display = "none";
+    resumeModal.style.display = "none";
 }
 
 close.addEventListener("mouseover", function(){

@@ -12,7 +12,6 @@ image.onmouseout = function() {
 }
 
 //*****script for modal*****
-var modal = document.getElementById("dimmedBG");
 var close = document.getElementById("closeRes");
 var resumeModal = document.getElementById("resumeModal");
 

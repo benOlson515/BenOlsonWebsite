@@ -6,44 +6,33 @@ html{
     margin: 0;
     padding: 0;
 }
-
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    min-width: 500;
 }
+
+
 
 li{
     list-style-type: none;
     color: white;  
-    margin-top: 10px; 
-    padding: 5px;
+    width: 150px;  
 }
 
-#listDiv{
-    
+#list{
     position: fixed;
-    width: 130px;
-    text-align: center;
+    width: 150px;
     align-content: center;
+    text-align: center;
     left:50%;
     margin-left: -75px;
-    color: white;
-    font-family: Courier New;
-    font-size: 25px;
-    
-    font-weight: bold;
-    
 }
 
 #name{
-    width: 100%;
+    width: 100hw;
     text-align: center;
     font-weight: bolder;
-    font-size: 250%;
+    font-size: 35px;
     color: white;
     font-family: Courier New;
     margin-top: 17%;
@@ -56,37 +45,61 @@ a{
     color: white; 
 }
 
-.modal{
-    display: none;
+
+#links{
+    float: left;
+    text-align: center; 
 }
 
-.closeModal{
+#links li{
+    color: white;
+    font-family: Courier New;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 40px;
+    padding: 9px;
+    text-align: center;
+    white-space: nowrap;
+    
+}
+
+/*modal button css */
+#contactButton{
     position: absolute;
+    bottom: 0;
+    left: 45%;
+    width: 10%;
     padding: 10px;
-    height: 20px;
-    top: 0;
-    right: 0;
+    text-align: center;
+    background-color: #8e380c;
+    font-weight: bold;
+    font-size: 14pt;
     cursor: pointer;
-   
 }
 
-@media only screen and (max-width: 400px){
-    #listDiv{
-        font-size: 40px;
-    }
+/*resume modal css*/
+#resIcon{
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 50px;
+    height: 50px;
+    padding: 20px;
 }
-
-/*   **********resume modal css********** */
 
 @keyframes animateRes {
     from {opacity:0}
     to {opacity:1}
 }
 
-
+#resIcon img{
+    max-width: 100%;
+    opacity: .4;
+}
 
 #resumeModal{
-    
+    display: none;
     position: fixed;
     width:70%;
     left:15%;
@@ -102,7 +115,6 @@ iframe{
     margin-top: 4%;
     
 }
-
 #closeRes{
     position: fixed;
     padding: 5px;
@@ -116,10 +128,9 @@ iframe{
    
 }
 
-
-/* ******css for contact modal******* */
-#contactModal{
-    
+/*css for contact modal*/
+.modal{
+    display: none;
     width: 40%;
     position: fixed;
     z-index: 1;
@@ -142,11 +153,10 @@ iframe{
     text-align: center;
     height: 100%;
     width: 100;
-    margin-top: 0;
     
 }
 
-#closeContact{
+#close{
     position: absolute;
     padding: 10px;
     height: 20px;
@@ -156,7 +166,7 @@ iframe{
    
 }
 
-#contactLinks{
+#links{
     margin-top:0;
     width: 100%;
     height: 100%;
@@ -192,20 +202,24 @@ iframe{
     background-color: azure;
 }
 
-/* *******CSS for about me modal********* */
+/* CSS for about me modal */
 #closeAbout{
     
     padding: 5px;
     height: 20px;
     margin-left: 96%;
     cursor: pointer;
-    
+    border-radius: 50%;
+    background-color: rgba(240,143,122,.5);
+    opacity: .5; 
+   
 }
 
-#aboutModal{
+.aboutModal{
     font-family: arial;
     font-size: 16pt;
     position: fixed;
+    display: none;
     width: 900pt;
     height: 300pt;
     left: 50%;
@@ -219,7 +233,7 @@ iframe{
     animation-duration: .6s; 
 }
 
-#aboutModal h2{
+.aboutModal h2{
     font-family: courier;
     margin-top: 5pt;
     margin-left: 40%;
@@ -241,8 +255,7 @@ iframe{
     padding: 5pt;
 }
 
-
-/* ***********CSS for projects modal********* */
+/* CSS for projects modal */
 #closeProjects{
     
     padding: 5px;
@@ -255,5 +268,125 @@ iframe{
    
 }
 
+/*html{
+    background-color: rgba(220,223,229,1);
+   
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
 
+li{
+    list-style-type: none;
+    font-family:Arial;
+}
+
+#fullPage{
+    
+}
+
+a{
+    color: rgba(55,55,55,.8);
+    text-decoration: none;
+}
+a:hover{
+    color: black;
+    padding: 3px;
+    
+}
+a:visited{
+    color: rgba(55,55,55,1);
+    text-decoration: none;
+    
+}
+img:hover{
+    opacity: .5;
+}
+
+body{
+    
+}
+
+#card{
+    width: 50%;
+    max-width: 850;
+    min-width: 730px;
+    height: 400px;
+    margin-left: 25%;
+    margin-top: 13%;
+    background-color: rgba(255,255,255,.8);
+    /*background-image: url(../Images/card_background2.jpg);
+    box-shadow: 10px 10px 10px;
+    
+}
+
+#card-profile{
+    height: 400px;
+    width: 50%;
+    float: left;
+    align-content: center;
+    text-align: center;
+}
+
+#card-profile li{
+    display: inline-block;
+    margin-top: 5px;
+    float: center;
+}
+#card-profile ul{
+    
+}
+
+#prof-wrap{
+    width: 300px;
+    float: left;
+}
+
+#name{
+    font-weight: 900;
+    font-size: 22px;
+    margin-top: 18px;
+}
+
+#pic{
+    width:250px;
+}
+
+#profilePic{
+    width: 240px;
+    height: 240px;  
+    overflow: hidden;
+    border-radius: 50%;
+    
+}
+
+.info{
+    width:100%;
+    font-family: Segoe UI;
+    font-weight: 500;
+    color:darkslategrey;
+}
+
+#links{
+    height: 400px;
+    width: 50%;
+    float: left;
+}
+
+#links li {
+    
+    display: block;
+    color: rgba(55,55,55,.8);
+    font-size: 50px;
+    font-family: Segoe UI;
+    font-weight: 900;
+    margin-top: -33px;
+    padding: 10px;
+}
+
+#links ul{
+    margin-top: 145px;
+    background-color:forestgreen;
+    box-shadow: -5px 5px;
+}*/
 

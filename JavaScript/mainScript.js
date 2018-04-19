@@ -8,6 +8,7 @@ var btnContact = document.getElementById('contactButton');
 
 
 
+
 //events for developer link
 dev.onmouseover = function(){
     page.style.backgroundImage = "url('Images/deskGrayscale.jpg')";
