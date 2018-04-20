@@ -39,8 +39,9 @@ proj.onmouseout = function(){
 
 // *******script for resume modal***************
 resume.addEventListener("click", function() {
-    resumeModal.style.display = "block";
     document.getElementById("resFrame").src="Docs/Resume2018.pdf#zoom=75";
+    resumeModal.style.display = "block";
+    
 })
 
 var closeResume = document.getElementById("closeRes");
