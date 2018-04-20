@@ -41,7 +41,10 @@ var closeContact = document.getElementById('closeContact');
 
 closeContact.onclick = function() {
     contactModal.style.display = "none";
-    contact.style.background = "rgba(70,70,70,1)";
+    if(screen.availWidth < 760){
+        contact.style.background = "rgba(70,70,70,1)";
+    }
+    
 }
 
 closeContact.addEventListener("mouseover", function(){
