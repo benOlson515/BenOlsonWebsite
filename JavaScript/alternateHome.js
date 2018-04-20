@@ -6,44 +6,6 @@ var proj = document.getElementById('projects');
 
 
 
-
-
-/*if (screen.availWidth > 760){
-    //change backgrounds of li elements on hover
-
-    about.onmouseover = function(){
-        about.style.background = "rgba(70,70,70,1)";
-    }
-    about.onmouseout = function(){
-        about.style.background = "rgba(0,0,0,0)";
-    }
-
-    contact.onmouseover = function(){
-        contact.style.background = "rgba(70,70,70,1)";
-    }
-    contact.onmouseout = function(){
-        contact.style.background = "rgba(0,0,0,0)";
-    }
-
-    resume.onmouseover = function(){
-        resume.style.background = "rgba(70,70,70,1)";
-    }
-    resume.onmouseout = function(){
-        resume.style.background = "rgba(0,0,0,0)";
-    }
-
-    proj.onmouseover = function(){
-        proj.style.background = "rgba(70,70,70,1)";
-    }
-    proj.onmouseout = function(){
-        proj.style.background = "rgba(0,0,0,0)";
-    }
-}
-
-if(screen.availWidth < 760){
-    document.getElementsByClassName('list').style.background = "rgba(70,70,70,1)";
-}*/
-
 // *******script for resume modal***************
 resume.addEventListener("click", function() {
     document.getElementById("resFrame").src="Docs/Resume2018.pdf#zoom=75";
@@ -79,6 +41,7 @@ var closeContact = document.getElementById('closeContact');
 
 closeContact.onclick = function() {
     contactModal.style.display = "none";
+    contact.style.background = "rgba(70,70,70,1)";
 }
 
 closeContact.addEventListener("mouseover", function(){
@@ -87,6 +50,7 @@ closeContact.addEventListener("mouseover", function(){
 
 closeContact.addEventListener("mouseout", function(){
     closeContact.style.backgroundColor = "";
+    
 })
 
 
