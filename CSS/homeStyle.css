@@ -354,7 +354,7 @@ iframe {
     #resume {
         display: none;
     }
-    listDiv li {
+    #listDiv li {
         background-color: rgba(70, 70, 70, 1);
     }
     #name {
