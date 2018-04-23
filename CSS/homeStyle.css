@@ -299,7 +299,6 @@ iframe {
     width: 600px;
     height: 70%;
     overflow-y: scroll;
-    background-color: aliceblue;
     color: black;
     font-family: Courier New;
     position: fixed;
@@ -314,7 +313,9 @@ iframe {
 
 #projWrap{
     padding: 30px;
-    height: 100%;
+    height: auto;
+    background-image: url(../Images//graphPaperBG.jpg);
+    background-repeat: repeat;
 }
 
 #projectsModal ul li a {
