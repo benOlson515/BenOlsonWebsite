@@ -79,4 +79,25 @@ closeAbout.onmouseout = function () {
     closeAbout.style.backgroundColor = "";
 }
 
+// ************script for projects modal**********
+
+var projMdl = document.getElementById('projectsModal');
+var closeProjects = document.getElementById('closeProjects');
+
+proj.addEventListener("click", function(){
+    projMdl.style.display = "block";
+})
+
+closeProjects.addEventListener("click", function(){
+    projMdl.style.display = "none";
+})
+
+closeAbout.onmouseover = function () {
+    closeAbout.style.backgroundColor = "firebrick";
+}
+
+closeAbout.onmouseout = function () {
+    closeAbout.style.backgroundColor = "";
+}
+
 

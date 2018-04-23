@@ -1,5 +1,5 @@
-html{
-    background-color: rgba(0,0,0,.8);
+html {
+    background-color: rgba(0, 0, 0, .8);
     width: 100%;
     height: 100%;
     transition: 0.2 ease;
@@ -7,10 +7,10 @@ html{
     padding: 0;
     position: fixed;
     overflow: hidden;
-   
+
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -19,32 +19,40 @@ body{
     overflow: hidden;
 }
 
-li{
+#listDiv ul {
     display: inline-block;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+
+#listDiv li {
+
     list-style-type: none;
-    color: white; 
+    color: white;
     margin-top: 10px;
     padding: 5px;
     width: 100%;
 }
 
-#listDiv{
-    
+#listDiv {
+
     position: relative;
     width: 150px;
     text-align: center;
     align-content: center;
-    left:50%;
+    left: 50%;
     margin-left: -75px;
     color: white;
     font-family: Courier New;
     font-size: 25px;
-    
+
     font-weight: bold;
-    
+
 }
 
-#nameDiv{
+#nameDiv {
     width: 100%;
     text-align: center;
     font-weight: bolder;
@@ -52,68 +60,72 @@ li{
     color: white;
     font-family: Courier New;
     margin-top: 17%;
-    background-color: rgba(70,70,70,1);
-   
-    
+    background-color: rgba(70, 70, 70, 1);
+
+
 }
 
-#name{
+#name {
     width: 95%;
     word-wrap: normal;
     margin-left: 2.5%;
 }
 
-a{
+a {
     text-decoration: none;
-    color: white; 
+    color: white;
 }
 
-.modal{
+.modal {
     display: none;
 }
 
-.closeModal{
+.closeModal {
     position: absolute;
     padding: 10px;
     height: 20px;
     top: 0;
     right: 0;
     cursor: pointer;
-   
+
 }
 
-.list:hover{
-    background-color: rgba(70,70,70,1);
+.list:hover {
+    background-color: rgba(70, 70, 70, 1);
 }
 
 /*   **********resume modal css********** */
 
 @keyframes animateRes {
-    from {opacity:0}
-    to {opacity:1}
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
 }
 
 
 
-#resumeModal{
-    
+#resumeModal {
+
     position: fixed;
-    width:70%;
-    left:15%;
+    width: 70%;
+    left: 15%;
     height: 90%;
     top: 0%;
     animation-name: animateRes;
-    animation-duration: 1s; 
+    animation-duration: 1s;
 }
 
-iframe{
+iframe {
     width: 98%;
     height: 96%;
     margin-top: 4%;
-    
+
 }
 
-#closeRes{
+#closeRes {
     position: fixed;
     padding: 5px;
     height: 20px;
@@ -121,19 +133,20 @@ iframe{
     right: 15px;
     cursor: pointer;
     border-radius: 50%;
-    background-color: rgba(240,143,122,.5);
-    opacity: .5; 
-   
+    background-color: rgba(240, 143, 122, .5);
+    opacity: .5;
+
 }
 
-#resumeSmallScreen{
+#resumeSmallScreen {
     display: none;
 }
 
 
 /* ******css for contact modal******* */
-#contactModal{
-    
+
+#contactModal {
+
     width: 40%;
     position: fixed;
     z-index: 1;
@@ -145,51 +158,51 @@ iframe{
     border-radius: 7px;
     border-width: 1px;
     height: 42%;
-    box-shadow: 10px 10px 10px rgba(0,0,0,.8);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
     animation-name: animatetop;
-    animation-duration: .6s;    
+    animation-duration: .6s;
 }
 
 
 
-.mdlContent{
+.mdlContent {
     text-align: center;
     height: 100%;
     width: 100;
     margin-top: 0;
-    
+
 }
 
-#closeContact{
+#closeContact {
     position: absolute;
     padding: 10px;
     height: 20px;
     top: 0;
     right: 0;
     cursor: pointer;
-   
+
 }
 
-#contactLinks{
-    margin-top:0;
+#contactLinks {
+    margin-top: 0;
     width: 100%;
     height: 100%;
-    
+
 }
 
-#icon{
+#icon {
     height: 50%;
     margin-left: 10%;
     border-radius: 20px;
 }
 
-#phone{
+#phone {
     font-family: courier;
     font-weight: bold;
     margin-top: 4%;
 }
 
-#title{
+#title {
     margin-top: 5%;
     font-family: courier;
     font-weight: bolder;
@@ -197,26 +210,33 @@ iframe{
 }
 
 @keyframes animatetop {
-    from {bottom: -40%; opacity:0}
-    to {bottom: 30%; opacity:1}
+    from {
+        bottom: -40%;
+        opacity: 0
+    }
+    to {
+        bottom: 30%;
+        opacity: 1
+    }
 }
 
 
-#contactButtton:hover{
+#contactButtton:hover {
     background-color: azure;
 }
 
 /* *******CSS for about me modal********* */
-#closeAbout{
-    
+
+#closeAbout {
+
     padding: 5px;
     height: 20px;
     margin-left: 96%;
     cursor: pointer;
-    
+
 }
 
-#aboutModal{
+#aboutModal {
     font-family: arial;
     font-size: 16pt;
     position: fixed;
@@ -228,26 +248,26 @@ iframe{
     margin-top: -150pt;
     padding: 20px;
     background-image: url("../Images/card_background2.jpg");
-    box-shadow: 10px 10px 10px rgba(0,0,0,.8);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
     animation-name: animatetop;
-    animation-duration: .6s; 
+    animation-duration: .6s;
 }
 
-#aboutModal h2{
+#aboutModal h2 {
     font-family: courier;
     margin-top: 5pt;
     margin-left: 40%;
-    
+
 }
 
-#me{
+#me {
     float: left;
     width: 200pt;
     margin-left: 5pt;
     border-radius: 45%;
 }
 
-#aboutContent p{
+#aboutContent p {
     float: left;
     margin-left: 25pt;
     margin-top: -2pt;
@@ -257,48 +277,75 @@ iframe{
 
 
 /* ***********CSS for projects modal********* */
-#closeProjects{
-    
+
+#closeProjects {
+
     padding: 5px;
     height: 20px;
     margin-left: 96%;
     cursor: pointer;
     border-radius: 50%;
-    background-color: rgba(240,143,122,.5);
-    opacity: .5; 
-   
+    background-color: rgba(240, 143, 122, .5);
+    opacity: .5;
+
+}
+
+#projectsModal {
+    display: none;
+    width: 600px;
+    height: auto;
+    background-color: aliceblue;
+    color: black;
+    font-family: Courier New;
+    padding: 10px;
+    position: fixed;
+    left: 50%;
+    margin-left: -300px;
+    top: 10%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
+    animation-name: animatetop;
+    animation-duration: .6s;
+
+}
+
+#projectsModal ul li a {
+    color: black;
+
 }
 
 /* ********media query for small screens and mobile********* */
-@media screen and (max-width: 760px){
-    #resumeSmallScreen{
+
+@media screen and (max-width: 760px) {
+    #resumeSmallScreen {
         display: block;
     }
-    #resume{
-        display:none;
+    #resume {
+        display: none;
     }
-    li{
-        background-color: rgba(70,70,70,1);
+    li {
+        background-color: rgba(70, 70, 70, 1);
     }
-    #contactModal{
-        width: 100%;
-        left:0;
+    #name {
+        font-size: 40px;
+    }
+    #contactModal {
+        width: 95%;
+        left: 2.5%;
         min-height: 250px;
     }
-    #aboutModal{
+    #aboutModal {
         width: 95%;
         left: 0;
         word-wrap: normal;
         top: 0;
         margin-left: 2.5%;
-        
         margin-top: 2.5%;
         height: 95%;
         padding: 0;
         overflow: scroll;
-        
+
     }
-    #aboutContent p{
+    #aboutContent p {
         text-align: center;
         margin-left: 0;
         margin-top: 270px;
@@ -306,18 +353,23 @@ iframe{
         height: auto;
         padding: 2.5%;
         overflow: scroll;
-        
+
     }
-    #aboutModal h2{
+    
+    #phone a{
+        text-decoration: underline;
+    }
+    
+    #aboutModal h2 {
         font-family: courier;
         width: 50%;
         margin-top: 5pt;
         margin-left: 25%;
         text-align: center;
-    
-}
 
-    #me{
+    }
+
+    #me {
         float: left;
         width: 200pt;
         margin-left: 50%;
@@ -325,42 +377,39 @@ iframe{
         left: -100pt;
         border-radius: 45%;
     }
-    
+
 }
 
-@media screen and (max-height: 450px){
-    #resumeSmallScreen{
+@media screen and (max-height: 450px) {
+    #resumeSmallScreen {
         display: block;
     }
-    #resume{
-        display:none;
+    #resume {
+        display: none;
     }
-    li{
-        background-color: rgba(70,70,70,1);
+    li {
+        background-color: rgba(70, 70, 70, 1);
     }
-    #contactModal{
+    #contactModal {
         width: 60%;
-        left:20%;
+        left: 20%;
         top: 5%;
         min-height: 280px;
-        
+
     }
-    
-    html{
+
+    html {
         position: absolute;
         overflow: scroll;
     }
-    body{
+    body {
         position: absolute;
         min-height: 500px;
-        
+
     }
-        
-    #name{
+
+    #name {
         margin-top: 5%;
     }
-    
+
 }
-
-
-
