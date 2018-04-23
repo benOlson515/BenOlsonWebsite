@@ -282,25 +282,29 @@ iframe {
 
     padding: 5px;
     height: 20px;
-    margin-left: 96%;
+    margin-right: 0%;
     cursor: pointer;
-    border-radius: 50%;
-    background-color: rgba(240, 143, 122, .5);
-    opacity: .5;
 
+}
+
+#closeProjects:hover{
+    background-color: firebrick;
+    height: 20px;
+    top: 0;
+    right: 0;
 }
 
 #projectsModal {
     display: none;
     width: 600px;
-    height: auto;
+    height: 70%;
+    overflow-y: scroll;
     background-color: aliceblue;
     color: black;
     font-family: Courier New;
-    padding: 10px;
     position: fixed;
     left: 50%;
-    margin-left: -300px;
+    margin-left: -315px;
     top: 10%;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
     animation-name: animatetop;
@@ -308,9 +312,36 @@ iframe {
 
 }
 
+#projWrap{
+    padding: 30px;
+    height: 100%;
+}
+
 #projectsModal ul li a {
     color: black;
 
+}
+
+#projectsModal li{
+    padding: 2.5px;
+    font-weight: bold;
+}
+
+#projectsModal a:hover{
+    text-decoration: underline;
+}
+
+/* ********custom scrollbar************ */
+
+::-webkit-scrollbar{
+    width:8px; 
+}
+::-webkit-scrollbar-thumb{
+    background: #706d6d;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #912828;
 }
 
 /* ********media query for small screens and mobile********* */
@@ -322,7 +353,7 @@ iframe {
     #resume {
         display: none;
     }
-    li {
+    listDiv li {
         background-color: rgba(70, 70, 70, 1);
     }
     #name {
@@ -342,7 +373,7 @@ iframe {
         margin-top: 2.5%;
         height: 95%;
         padding: 0;
-        overflow: scroll;
+        overflow-y: scroll;
 
     }
     #aboutContent p {
@@ -352,7 +383,7 @@ iframe {
         width: 95%;
         height: auto;
         padding: 2.5%;
-        overflow: scroll;
+        overflow-y: scroll;
 
     }
     
@@ -376,6 +407,14 @@ iframe {
         position: absolute;
         left: -100pt;
         border-radius: 45%;
+    }
+    
+    #projectsModal{
+        width: 95%;
+        height: 95%;
+        margin: 2.5%;
+        left: 0;
+        top: 0;
     }
 
 }
