@@ -313,7 +313,7 @@ iframe {
 
 #projWrap{
     padding: 30px;
-    height: auto;
+    height: 200%;
     background-image: url(../Images//graphPaperBG.jpg);
     background-repeat: repeat;
 }
