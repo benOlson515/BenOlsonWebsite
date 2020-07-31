@@ -8,7 +8,7 @@ var proj = document.getElementById('projects');
 
 // *******script for resume modal***************
 resume.addEventListener("click", function() {
-    document.getElementById("resFrame").src="Docs/resumeAugust2018.pdf#zoom=100";
+    document.getElementById("resFrame").src="Docs/BenjaminOlsonResume2020.pdf#zoom=100";
     resumeModal.style.display = "block";
     
 })
