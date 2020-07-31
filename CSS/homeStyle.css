@@ -241,16 +241,21 @@ iframe {
     font-size: 16pt;
     position: fixed;
     width: 900pt;
-    height: 300pt;
+    height: 400pt;
     left: 50%;
     top: 50%;
     margin-left: -450pt;
-    margin-top: -150pt;
+    margin-top: -200pt;
     padding: 20px;
     background-image: url("../Images/card_background2.jpg");
     box-shadow: 10px 10px 10px rgba(0, 0, 0, .8);
     animation-name: animatetop;
     animation-duration: .6s;
+}
+
+.aboutStuff{
+    display: inline;
+
 }
 
 #aboutModal h2 {
@@ -265,6 +270,7 @@ iframe {
     width: 200pt;
     margin-left: 5pt;
     border-radius: 45%;
+    
 }
 
 #aboutContent p {
