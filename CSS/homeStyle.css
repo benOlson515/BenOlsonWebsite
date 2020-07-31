@@ -353,7 +353,7 @@ iframe {
 
 /* ********media query for small screens and mobile********* */
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 812px) {
     #resumeSmallScreen {
         display: block;
     }
@@ -369,7 +369,11 @@ iframe {
     #contactModal {
         width: 95%;
         left: 2.5%;
-        min-height: 250px;
+        height:25%;
+        margin-top: 0%;
+    }
+    .icon{
+        height: 30%;
     }
     #aboutModal {
         width: 95%;
@@ -457,5 +461,44 @@ iframe {
     #name {
         margin-top: 5%;
     }
+    #aboutModal h2 {
+        font-family: courier;
+        width: 50%;
+        margin-top: 5pt;
+        margin-left: 25%;
+        text-align: center;
 
+    }
+
+    #me {
+        float: left;
+        width: 200pt;
+        margin-left: 50%;
+        position: absolute;
+        left: -100pt;
+        border-radius: 45%;
+    }
+    #aboutModal {
+        width: 95%;
+        left: 0;
+        word-wrap: normal;
+        top: 0;
+        margin-left: 2.5%;
+        margin-top: 2.5%;
+        height: 95%;
+        padding: 0;
+        overflow-y: scroll;
+
+    }
+    #aboutContent p {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 270px;
+        width: 95%;
+        height: auto;
+        padding: 2.5%;
+        overflow-y: scroll;
+
+    }
+    
 }
